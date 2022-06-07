@@ -14,7 +14,7 @@ try {
     console.error(error);
 }
 
-app.use(cors({ credentials:true, origin:'https://datatables-appsfactor.herokuapp.com' }));
+app.use(cors({ credentials:true, origin:'https://datatables1.netlify.app/' }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(router);
