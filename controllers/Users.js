@@ -5,6 +5,9 @@ import jwt from "jsonwebtoken";
 import { json } from "express";
 //import { json } from "sequelize/types";
 
+export const test = async (req, res) => {
+    res.send('Hello, World!');
+}
 export const getUsers = async (req, res) => {
     try {
         // var sql = `SELECT * FROM users `;

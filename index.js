@@ -14,7 +14,7 @@ try {
     console.error(error);
 }
 
-app.use(cors({ credentials:true, origin:'http://localhost:3000' }));
+app.use(cors({ credentials:true }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(router);
@@ -25,4 +25,4 @@ if(process.env.NODE_ENV == "production")
 }
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, ()=> console.log('Server running at port ${PORT}'));
+app.listen(PORT, ()=> console.log('Server running at port',PORT));

@@ -157,3 +157,20 @@ export const createClient = async (req, res) => {
 //     }
 //   })
 // }
+
+
+export const getClients = async (req, res) => {
+  try {
+    
+    const clients = await Clients.findAll({
+      attributes: ['name']
+    });
+    res.json(clients);
+    //console.log(clients);
+
+  } catch (error) {
+    console.log(error);
+  }
+
+  //  
+}
