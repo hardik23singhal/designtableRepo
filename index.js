@@ -14,7 +14,7 @@ try {
     console.error(error);
 }
 
-app.use(cors());
+app.use(cors({ credentials:true, origin:'https://datatables-appsfactor.herokuapp.com' }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(router);
