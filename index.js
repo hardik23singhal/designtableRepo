@@ -14,7 +14,7 @@ try {
     console.error(error);
 }
 
-app.use(cors({ credentials:true, origin:'https://datatables1.netlify.app/' }));
+app.use(cors({ credentials: true, origin: ["https://datatables1.netlify.app/"], methods : ["GET", "POST", "DELETE"], origin: true }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(router);
