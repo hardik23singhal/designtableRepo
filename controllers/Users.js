@@ -6,7 +6,7 @@ import { json } from "express";
 //import { json } from "sequelize/types";
 
 export const test = async (req, res) => {
-    res.send('Hello, World!');
+    res.send('Hello, World! from the latest technology Stack');
 }
 export const getUsers = async (req, res) => {
     try {
